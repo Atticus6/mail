@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>鸭一云基础设施 - 验证码邮件</title>
+  </head>
+  <body>
+    <main
+      class="h-screen w-full flex justify-center items-center text-gray-600 dark:text-gray-300 bg-[#eff3f8] dark:bg-[#162a41]"
+    >
+      <div
+        class="w-[400px] md:w-[600px] bg-white dark:bg-[#293b51] p-6 shadow-sm hover:shadow-md rounded-xl flex flex-col gap-3"
+      >
+        <h1
+          class="text-white dark:text-gray-800 bg-[#27ab83] dark:bg-[#44d4a9] px-10 py-4 text-center text-2xl font-bold rounded-xl"
+        >
+          鸭一云基础设施 - 验证码邮件
+        </h1>
+
+        <div class="flex flex-col gap-2 px-1">
+          <p>亲爱的用户：</p>
+          <p>您正在注册，这是您的验证码：</p>
+          <p class="flex justify-center items-center py-3 text-2xl font-bold">
+            {{.Code}}
+          </p>
+          <p>此验证码在 10 分钟内有效，请尽快完成验证。</p>
+          <p>
+            如非您本人操作，请忽略此邮件。可能是他人错误的键入了您的邮箱地址。
+          </p>
+          <p>感谢您的使用与信任，如有任何问题，欢迎随时联系我们。</p>
+          <p>最诚挚的问候,</p>
+          <p>DCI Cloud Service Team</p>
+        </div>
+
+        <p class="font-thin text-center text-sm pt-3 border-t">
+          版权所有 ©2024，DCI (Ducky Cloud Infrastructure)
+          和/或其关联服务商。保留所有权利。
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
