@@ -1,99 +1,77 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
     <title>鸭一云基础设施 - DCI 实例配置信息</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        .header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            border-radius: 8px 8px 0 0;
-        }
-        .content {
-            margin-top: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            text-align: left;
-            padding: 8px;
-        }
-        .config-row {
-            background-color: #f4f4f4;
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-        }
-        .config-label {
-            padding-right: 10px; /* 为冒号和内容提供一些空间 */
-        }
-        .footer {
-            margin-top: 30px;
-            font-size: 12px;
-            text-align: center;
-        }
-        hr {
-            border: 0;
-            height: 1px;
-            background: #e0e0e0;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-    <div class="header">
-        <h2>鸭一云基础设施 - DCI 实例配置信息</h2>
-    </div>
-    <div class="content">
-        <table>
-            <tr class="config-row">
-                <td class="config-label">ID</td>
-                <td>: 45920</td>
-            </tr>
-            <tr class="config-row">
-                <td class="config-label">Name</td>
-                <td>: New Instance</td>
-            </tr>
-            <tr class="config-row">
-                <td class="config-label">Region</td>
-                <td>: KR - Seoul</td>
-            </tr>
-            <tr class="config-row">
-                <td class="config-label">AD</td>
-                <td>: AD - 1</td>
-            </tr>
-            <tr class="config-row">
-                <td class="config-label">FD</td>
-                <td>: FD - 4</td>
-            </tr>
-            <!-- 添加更多的配置项... -->
-        </table>
-        <!-- 更多内容... -->
-    </div>
-    <hr>
-    <div class="footer">
-        版权所有 ©2024，DCI (Ducky Cloud Infrastructure) 和/或其关联服务商。保留所有权利。
-    </div>
-</div>
-</body>
+  </head>
+  <body>
+    <main
+      class="h-screen w-full flex justify-center items-center text-gray-600 dark:text-gray-300 bg-[#eff3f8] dark:bg-[#162a41]"
+    >
+      <div
+        class="w-[400px] overflow-x-hidden md:w-[600px] bg-white dark:bg-[#293b51] p-6 shadow-sm hover:shadow-md rounded-xl flex flex-col gap-2"
+      >
+        <h2
+          class="text-white dark:text-gray-800 bg-[#27ab83] dark:bg-[#44d4a9] px-10 py-4 text-center text-4xl font-bold rounded-xl"
+        >
+          鸭一云基础设施
+        </h2>
+
+        <div
+          class="font-medium text-lg mb-1 sm:mb-2 my-3 bg-[#f8f9fa] dark:bg-[#293b51] px-2 pb-2 rounded-md"
+        >
+          <div class="text-2xl mb-4">实例配置信息</div>
+          <div class="flex">
+            <span class="w-1/3"> ID</span>
+            <span>:45920</span>
+          </div>
+          <div class="flex">
+            <span class="w-1/3">Name</span>
+            <span>: New Instance</span>
+          </div>
+          <div class="flex">
+            <span class="w-1/3">Region</span>
+            <span>: KR - Seoul</span>
+          </div>
+          <div class="flex">
+            <span class="w-1/3">AD</span>
+            <span>: AD - 1</span>
+          </div>
+          <div class="flex">
+            <span class="w-1/3">FD</span>
+            <span> : FD - 4</span>
+          </div>
+        </div>
+
+        <div
+          class="font-medium text-lg mb-1 sm:mb-2 my-3 bg-[#f8f9fa] dark:bg-[#293b51] px-2 pb-2 rounded-md"
+        >
+          <div class="border-t font-thin text-sm"></div>
+          <div class="text-2xl my-4">连接信息</div>
+          <div class="flex">
+            <span class="w-1/3 flex-none"> DDNS</span>
+            <span class="">: ae-dubai-oracle-46ebed.ip1.shop</span>
+          </div>
+          <div class="flex">
+            <span class="w-1/3">SSH</span>
+            <span>: 46301</span>
+          </div>
+          <div class="flex">
+            <span class="w-1/3">User</span>
+            <span>: Root</span>
+          </div>
+          <div class="flex">
+            <span class="w-1/3">Pass</span>
+            <span>: sZirq2j5yiXMy3@j</span>
+          </div>
+        </div>
+        <p class="font-thin text-center text-sm pt-3 border-t">
+          版权所有 ©2024，DCI (Ducky Cloud Infrastructure)
+          和/或其关联服务商。保留所有权利。
+        </p>
+      </div>
+    </main>
+  </body>
 </html>
