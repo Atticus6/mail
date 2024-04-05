@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .title {
-  @apply text-white dark:text-gray-800 bg-[#27ab83] dark:bg-[#44d4a9] px-10 py-4 text-center text-4xl font-bold rounded-xl;
+  @apply text-white dark:text-gray-800 bg-[#27ab83] dark:bg-[#44d4a9] px-10 py-4 text-center text-2xl font-bold rounded-xl;
 }
